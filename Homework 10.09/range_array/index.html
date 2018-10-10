@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        'use strict';
+        function range(start, end, step = 1) {
+            var arr = [];
+
+            function pushItem(start, end, step) {
+                arr.push(start);
+                if (Math.abs(end - start) < Math.abs(step))
+                    return arr;
+                return pushItem(start + step, end, step);
+            }
+
+            return pushItem(start, end, step);
+        }
+
+        function sumArray(arr) {
+            var sum = 0;
+            for (var i = 0; i < arr.length; i++) {
+                sum += arr[i];
+            }
+            return sum;
+        }
+
+        var arr = range(1, 55, 4);
+        alert(sumArray(arr));
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        function countChar(str, char) {
+            char = String(char);
+            var counter = 0;
+            for (var i = 0; i < str.length; i++) {
+                if (str.charAt(i) === char) {
+                    counter++;
+                }
+            }
+            return counter;
+        }
+        alert(countChar('asasasasasasa', 'a'));
+    </script>
+</body>
+
+</html>

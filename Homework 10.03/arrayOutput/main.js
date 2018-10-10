@@ -18,4 +18,4 @@ function arrayOutput(arr) {
   }
 }
 
-arrayOutput(getRandomArray(1, 1000, 30));
+arrayOutput(getRandomArray(1, 1000, 20));
