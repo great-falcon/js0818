@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        function Worker(name, rate) {
+            this.name = name;
+            this.rate = rate;
+            this.setHours = function (hours) {
+                this.hours = hours;
+                if (this.hours > 160) {
+                    this.salary = 160 * this.rate + (this.hours - 160) * 1.5 * this.rate;
+                } else{
+                    this.salary = this.hours * this.rate;
+                }
+            }
+            this.getSalary = function () {
+                return salary;
+            }
+            this.getInfo = function(){
+                return 'Name: ' + this.name + ' Hours: ' + this.hours + ' Salary: ' + this.salary;
+            }
+
+            
+        }
+
+        var vasya = new Worker('Vasya', 70);
+            vasya.setHours(170);
+            console.log(vasya.getInfo());
+
+
+    </script>
+</body>
+
+</html>
