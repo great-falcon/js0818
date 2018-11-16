@@ -1,0 +1,29 @@
+[
+    {
+        "id": 706483,
+        "name": "Kharkiv",
+        "country": "UA",
+        "coord": {
+          "lon": 36.25,
+          "lat": 50
+        }
+    },
+    {
+        "id": 5368361,
+        "name": "Los Angeles",
+        "country": "US",
+        "coord": {
+          "lon": -118.243683,
+          "lat": 34.052231
+        }
+      },
+      {
+        "id": 1850147,
+        "name": "Tokyo",
+        "country": "JP",
+        "coord": {
+          "lon": 139.691711,
+          "lat": 35.689499
+        }
+      }
+]
